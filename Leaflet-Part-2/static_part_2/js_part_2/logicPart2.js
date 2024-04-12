@@ -64,17 +64,5 @@ var dat = L.geoJson(data, {
   // Adding the legend to the map
   legend.addTo(map);
 
-d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json").then(function (platedata){
-// Adding our GeoJSON data , along with style information, to our techtonic plates
-// layer.
-
-L.geoJson(platedata, {
-  color: "orange",
-  weight: 2
-}).addTo(map);
-
 });
-
-});
-
 
